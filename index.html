@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagens/favicon.png">
+    <title>Semeando Books</title>
+    <link rel="stylesheet" href = 'styles.css'>
+</head>
+<body>
+<!-- ------------------------ <header>----------------------->
+    <header>
+        <div class="container">
+            <img src="imagens/logo.png" alt="Logotipo" id="logo">
+
+            <!-- MENU RESPONSIVO -->
+            <nav class="dropdown">
+                <input type="checkbox" id="menu"> 
+                <label for="menu"> 
+                    <span></span>
+                </label>
+                <ul class="dropdown-content">
+                    <li> <a href="#home"> INÍCIO</a></li>
+                    <li> <a href="#operation">FUNCIONAMENTO </a></li>
+                    <li> <a href="#payment"> PLANOS </a></li>
+                    <li> <a href="#help"> DÚVIDAS </a></li>
+                </ul>
+            </nav>
+        
+            <!-- MENU NORMAL -->
+            <div class="container-menu">
+                <nav class="box-menu">
+                    <ul>
+                        <li> <a href="#home"> INÍCIO</a></li>
+                        <li> <a href="#operation"> FUNCIONAMENTO </a></li>
+                        <li> <a href="#payment"> PLANOS </a></li>
+                        <li> <a href="#help"> DÚVIDAS </a></li>
+                    </ul>
+                </nav>
+                
+                <div class="dropdown-content-logn" >
+                    <button class="dropbtn"> 
+                        <img src="imagens/logn.png" alt="Logn">
+                    </button>
+                    <div class="dropdown-logn">
+                      <form>
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+                        
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                        
+                        <input type="submit" value="LOGN" class="button-green">
+                      </form>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </header>
+<!-- --------------------------- <main> --------------------------->
+    <main>
+        <section class="container-section bg-colorful" id="home">
+            <div class="container">
+                <div class="container-text">
+                    <h1 class="text-red"> Mês temático com edições comemorativas! </h1>
+                    <a href="#" class="button button-green"> ASSINAR </a>
+                </div>
+                <img src="imagens/books.png" alt="Livros" class="box-image">
+            </div>
+        </section>  
+        
+        <section class="container-section bg-white" id="operation">
+            <div class="container ">
+                <h1> Como funciona? </h1>
+                <div class="container-box ">
+                    <div class="box"> 
+                        <img src="imagens/calendar.png" alt="Calendário" class="dimension">
+                        <p> Todos os Meses</p>
+                    </div>
+                    <div class="box"> 
+                        <img src="imagens/flyingBooks.png" alt="Livros no ar" class="dimension">
+                        <p>Livros Surpresas</p>
+                    </div>
+                    <div class="box"> 
+                        <img src="imagens/bookShelf.png" alt="Prateleira com livros" class="dimension">
+                        <p> Novos Livros e Autores</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section class="container-section bg-blue" id="payment">
+            <div class="container text-white">
+                <div class="container-text">
+                    <h1> Básico </h1>
+                    <p > Em parceria com escritores renomados, montamos kits básicos com os livros mais desejados do momento.</p>
+                    <h2> R$ 35,90<span>/mês</span></h2>
+                    <a href="#" class="button text-blue button-white"> ASSINAR </a>
+                </div>
+                <img src="imagens/basicKit.png" alt="Kit básico">
+            </div>
+        </section> 
+        
+        <section class="container-section bg-orange">
+            <div class="container-text-right">
+                <img src="imagens/topKit.png" alt="Kite inédito">
+                <div class="container-text text-white">
+                    <h1> Inéditos </h1>
+                    <p> Autores renomados da literatura  foram convidados para criar kits exclusivos com seus livros favoritos, proporcionando aos leitores uma experiência inédita. Cada kit inclui uma seleção dos livros mais marcantes de cada autor, acompanhada por surpresas relacionadas aos universos literários.</p>
+                    <h2> R$ 55,90<span>/mês</span></h2>
+                    <a href="#" class="button text-orange button-white"> ASSINAR </a>
+                </div> 
+            </div>
+        </section> 
+
+        <section class="container-section bg-beige" id="help">
+            <div class="container">
+                <div class="container-text">
+                    <h1 > Não sabe qual plano escolher? </h1>
+                    <p class="font-text"> Nós te ajudamos!</p>
+                    <a href="#" class="button text-white bg-blue button-blue"> FAÇA O TESTE </a>
+                </div>
+                <img src="imagens/think.png" alt="Pensativo" class="box-image">
+            </div>
+        </section> 
+    </main>
+<!-- --------------------------- <footer> --------------------------->
+    <footer> 
+        <div class="container">
+            <div class="input-group">
+                <label>Receba nossa newsletter </label>
+                <div>
+                    <input type="email" class="input" id="Email" name="Email" placeholder="Digite seu email" autocomplete="off">
+                    <input class="button--submit" value="ENVIAR" type="submit">
+                </div>
+            </div>
+            <div class="container media">
+                <p>Nos acompanhe nas redes</p>
+                <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="imagens/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="imagens/youtube.png" alt="Youtube"></a>
+            </div>
+        </div>   
+    </footer>
+
+</body>
+</html>

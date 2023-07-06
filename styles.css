@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+  --beige: #FCE5C7;
+  --blue:#009BBF;
+  --green:#3A7758;
+  --orange:#FF9400;
+  --red:#FD2626; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+  
+ /* ------------------- */
+h1{
+  font-family:'Dancing Script', cursive;
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+
+p, span,label{
+  font-size: 22px;
+}
+
+h2{
+  font-size:30px ;
+}
+
+/* --- tex color --- */
+.text-blue{
+  color:var(--blue);
+}
+
+.text-orange{
+  color:var(--orange);
+}
+
+.text-red{
+  color:var(--red);
+}
+
+.text-white{
+  color:white;
+}
+
+/* ----bacground color--- */
+.bg-blue{
+  background-color: var(--blue);
+}
+
+.bg-beige{
+  background-color: var(--beige);
+}
+
+.bg-colorful{
+  background: linear-gradient(45deg, var(--beige) 80%, var(--green) 20%);
+}
+
+.bg-orange{
+  background-color: var(--orange);
+}
+
+.bg-white, .button-white{
+  background-color: white;
+}
+
+/* ------ container ----- */
+.container{
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------<header>---------- */
+header{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #f8f8f8;
+}  
+
+#logo{
+  margin: 3px;
+}
+ 
+header a:hover {
+  color:var(--green);
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+}
+  
+.dropdown input[type="checkbox"]{
+  display: none;
+}
+
+.dropdown input[type="checkbox"]:checked ~ .dropdown-content,
+.dropdown-content-logn:hover .dropdown-logn{
+  display: block;
+}
+
+.dropdown label{
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  background-image: url(/imagens/icon.png);
+  background-repeat: no-repeat;
+}
+  
+.dropdown label span {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+.dropdown-content a , .box-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+     
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+}
+
+.container-menu{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.box-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+      
+.box-menu li {
+  display: inline-block;
+}
+
+/* ----- */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  background:none;
+}
+
+ .dropdown-logn {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+.dropdown-logn input[type="text"],
+.dropdown-logn input[type="password"] {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.dropdown-logn input[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+} 
+
+/* --------- main ---------- */
+main{
+  display:grid;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#home{
+  padding-top: 100px;
+}
+.container-text{
+  text-align: center;
+  width:50%;
+  margin-bottom: 50px;
+}
+
+.button{
+  padding:15px ;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-green{
+  background-color: var(--green);
+  color:white;
+}
+
+.button-green:hover{
+  background-color: #45a072;
+}
+
+.container-section{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  min-height: 500px; 
+}
+
+.container-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Dancing Script', cursive;
+}
+
+.box{
+  display: grid;
+  justify-items: center;
+  margin: 20px;
+}
+
+.dimension{
+  width: 100px;
+  height: 100px;
+}
+
+.button-white:hover{
+  background-color: var(--beige);
+}
+.container-text-right{
+  width: 70vw;
+  display: flex;
+  flex-wrap:wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-blue:hover{
+  background-color: #29c1e3;
+}
+
+.font-text{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* --------- <footer>  ---------- */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:#E6E6E6;
+  padding: 50px 0px;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+}
+  
+.input {
+  min-height: 40px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid var(--blue);
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+  
+.button--submit {
+  min-height: 40px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+  
+.button--submit:hover {
+  background-color: var(--blue);
+}
+  
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+.media{
+  width: 30vw;
+}
+
+/* ------ RESPONSIVIDADE ----- */
+@media screen and (max-width: 860px) {
+  .box-image{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  /* --- <header> --- */
+  .box-menu{
+    display: none;
+  }
+  .dropdown{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
